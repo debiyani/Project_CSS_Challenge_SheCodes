@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My weather application</title>
+    <style>
+      body{
+        background-color: rgb(239, 229, 249);
+      }
+      .container{
+        display: flex;
+        justify-content: center;
+      }
+      #temp{
+        font-weight:900;
+        font-size: 70px;
+        padding:20px;
+      }
+      strong{
+        color: rgb(239, 104, 131);
+      }
+     p {
+        font-weight: light;
+        color: gray;
+      }
+      input{
+        height: 45px;
+        width:auto;
+        border: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 8px;
+      }
+      .placeholder{
+        background-color: whitesmoke;
+      }
+      .search{
+        color:white;
+        background-color: rgb(159, 89, 225);
+      }
+      .current-weather{
+        display: flex;
+        flex-direction: row;
+        margin:25px;
+      }
+      .body-class{
+        background-color: white;
+        max-width:max-content;
+        padding:50px;
+        padding-top: 15px;
+        margin:auto;
+        margin-top: 50px;
+        border-radius:25px;
+      }
+      .search:hover{
+        background-color: rgb(135, 54, 206);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body-class"><header>
+      <div class="container">
+        <form>
+          <input type="search" class="placeholder" placeholder="Enter a city.." required />
+          <input type="submit" class="search" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1>Paris</h1>
+            <p>
+              Saturday 15:32, moderate rain <br />
+              Humidity: <strong >87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div id="temp">
+            <span style="font-size: 40px">☀️</span>14<sup style="font-weight: 500; font-size: 30px;">
+              °C</sup></div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Your name</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+      </div>
+    </div>
+  </body>
+</html>
